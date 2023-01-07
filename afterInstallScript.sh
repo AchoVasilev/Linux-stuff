@@ -27,7 +27,7 @@ sudo dnf group upgrade --with-optional Multimedia -y
 sudo dnf install vlc
 
 #create programming directory
-mkdir Programs && cd Programs
+mkdir Mine && cd Mine && mkdir Programs && cd Programs
 
 #Install postman
 sudo flatpak install postman
@@ -39,15 +39,14 @@ dnf check-update
 sudo dnf install code -y
 
 #Install docker
-sudo dnf -y install dnf-plugins-core
+sudo dnf -y install dnf-plugins-core -y
 sudo dnf config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
-wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.15.0-x86_64.rpm?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64
-sudo dnf install docker-desktop-4.15.0-x86_64.rpm
 
 #Install IntelliJ
 wget https://download.jetbrains.com/idea/ideaIC-2022.3.tar.gz
 sudo tar -xzf ideaIC-2022.3.tar.gz --directory=/home/acho/Programs
-sudo ln -sf /home/acho/Programs/idea/bin/idea.sh /bin/intellijidea-ce
+cd idea-IC-223.7571.182/bin
+./idea.sh
