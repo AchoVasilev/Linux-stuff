@@ -51,3 +51,8 @@ sudo tar -xzf ideaIC-2022.3.tar.gz --directory=/home/acho/Programs
 cd idea-IC-223.7571.182/bin
 ./idea.sh
 #if error with permissions - sudo chown -R $(whoami) idea-IC-223.7571.182/
+
+#Install pgadmin
+sudo rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
+sudo dnf install pgadmin4 -y
+sudo /usr/pgadmin4/bin/setup-web.sh -y
