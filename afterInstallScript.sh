@@ -50,3 +50,4 @@ wget https://download.jetbrains.com/idea/ideaIC-2022.3.tar.gz
 sudo tar -xzf ideaIC-2022.3.tar.gz --directory=/home/acho/Programs
 cd idea-IC-223.7571.182/bin
 ./idea.sh
+#if error with permissions - sudo chown -R $(whoami) idea-IC-223.7571.182/
