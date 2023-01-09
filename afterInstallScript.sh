@@ -58,5 +58,8 @@ sudo dnf install pgadmin4 -y
 sudo /usr/pgadmin4/bin/setup-web.sh -y
 
 #Install NodeJs
-sudo dnf module install nodejs:18/common -y
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.bashrc
+nvm install 18.10.0
+nvm use 18.10.0
 npm install -g @angular/cli
