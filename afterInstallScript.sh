@@ -59,3 +59,4 @@ sudo /usr/pgadmin4/bin/setup-web.sh -y
 
 #Install NodeJs
 sudo dnf module install nodejs:18/common -y
+npm install -g @angular/cli
