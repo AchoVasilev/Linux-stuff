@@ -56,3 +56,6 @@ cd idea-IC-223.7571.182/bin
 sudo rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
 sudo dnf install pgadmin4 -y
 sudo /usr/pgadmin4/bin/setup-web.sh -y
+
+#Install NodeJs
+sudo dnf module install nodejs:18/common -y
