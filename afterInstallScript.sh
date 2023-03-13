@@ -63,3 +63,5 @@ source ~/.bashrc
 nvm install 18.10.0
 nvm use 18.10.0
 npm install -g @angular/cli
+
+gsettings set org.freedesktop.ibus.panel.emoji hotkey "[]"
